@@ -1,0 +1,307 @@
+﻿<!doctype html>
+<html class="no-js" lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Oruç Han Kural</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/Site/assets/img/logo/logo.png">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/Content/Site/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/slicknav.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/gijgo.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/animated-headline.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/slick.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/nice-select.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/style.css">
+
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="~/Content/Site/assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="~/Content/Site/assets/img/hero/logo.png" style="width:100px;" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="/Home/Index">Ana Sayfa</a></li>
+                                                <li><a href="/About/Index/">Hakkımda</a></li>
+                                                <li><a href="/Services/Index/">Hizmetler</a></li>
+                                                <li><a href="/Blog/Index/">Blog</a>  </li>
+                                                <li><a href="/Contact/Index/">İletişim</a></li>
+                                                <li><a href="/Register/Index/">Kayıt Ol</a></li>
+                                                <li><a href="/SSS/Index/">SSS?</a></li>
+                                                <a id="myBtn" class="fas fa-sign-in-alt" style="padding: 5px; color: white;"></a>
+                                                <a href="#" class="fas fa-shopping-basket" style="padding: 5px;"></a>
+                                                <a href="#" class="fas fa-shopping-cart" style="padding: 5px;"></a>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <form class="form-default" action="login-bg.mp4" method="POST">
+
+                                    <div class="login-form">
+
+                                        <!-- logo-login -->
+
+
+
+                                        <span class="close">&times;</span>
+
+                                        <h2>Giriş Yap</h2>
+                                        <div class="form-input">
+                                            <label for="name">E-Posta</label>
+                                            <input type="text" name="text" placeholder="E-Posta">
+                                        </div>
+                                        <div class="form-input">
+                                            <label for="name">Şifre</label>
+                                            <input type="password" name="password" placeholder="Şifre">
+                                        </div>
+                                        <div class="form-input pt-30">
+                                            <input type="submit" name="submit" value="Giriş Yap">
+                                        </div>
+
+
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+
+                                // Get the button that opens the modal
+                                var btn = document.getElementById("myBtn");
+
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+
+                                // When the user clicks the button, open the modal
+                                btn.onclick = function () {
+                                    modal.style.display = "block";
+                                }
+
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function () {
+                                    modal.style.display = "none";
+                                }
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                    function closeForm() {
+                                        document.getElementById("myForm").style.display = "none";
+                                    }
+                                }
+                            </script>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Header End -->
+    </header>
+    <main>
+        @RenderBody()
+        <!-- Slider Area Start-->
+        <!--? Testimonial Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrappr " style="background-color:#170519;">
+       
+            <div class="footer-area footer-padding ">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <!-- logo -->
+                                <div class="footer-logo mb-25">
+                                    <a href="index.html"><img src="~/Content/Site/assets/img/hero/logo.png" style="width:50px;" alt=""></a>
+                     
+                                </div>
+                                <div class="footer-tittle mb-50">
+                                    <p>Yenilikler ve indirimlerden haberdar olmak için haber bültenimize Abone Ol</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" E-posta Adresiniz" class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-posta Adresiniz'">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+                                                    Abone Ol
+                                                </button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                                <div class="footer-social mt-50">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Kurumsal</h4>
+                                    <ul>
+                                        <li><a href="#">Ben Kimim?</a></li>
+                                        <li><a href="#">Neden bizi seçmelisin?</a></li>
+                                        <li><a href="#">Geri Dönüşler</a></li>
+                                        <li><a href="#">Çalıştığımız Firmalar</a></li>
+                                        <li><a href="#">Hizmet Galerimiz</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Ürünler</h4>
+                                    <ul>
+                                        <li><a href="#">Dinamik Website</a></li>
+                                        <li><a href="#">Statik Website</a></li>
+                                        <li><a href="#">SEO</a></li>
+                                        <li><a href="#">Sosyal Medya</a></li>
+                                        <li><a href="#">Marka Çalışması</a></li>
+                                        <li><a href="#">Logo Tasarım</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Destek</h4>
+                                    <ul>
+                                        <li><a href="#">İletişim</a></li>
+                                        <li><a href="#">Teknik Destek</a></li>
+                                        <li><a href="#">Kayıt Ol</a></li>
+                                        <li><a href="#">Giriş Yap</a></li>
+                                        <li><a href="#">SSS</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom area -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="footer-copy-right text-center">
+                                    <p>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        oruchankural.com.tr &copy;
+                                        <script>document.write(new Date().getFullYear());</script> | Tüm Hakları Saklıdır.
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+    <script src="~/Content/Site/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="~/Content/Site/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/Content/Site/assets/js/popper.min.js"></script>
+    <script src="~/Content/Site/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="~/Content/Site/assets/js/jquery.slicknav.min.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="~/Content/Site/assets/js/owl.carousel.min.js"></script>
+    <script src="~/Content/Site/assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="~/Content/Site/assets/js/wow.min.js"></script>
+    <script src="~/Content/Site/assets/js/animated.headline.js"></script>
+    <script src="~/Content/Site/assets/js/jquery.magnific-popup.js"></script>
+    <!-- Date Picker -->
+    <script src="~/Content/Site/assets/js/gijgo.min.js"></script>
+    <!-- Video bg -->
+    <script src="~/Content/Site/assets/js/jquery.vide.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="~/Content/Site/assets/js/jquery.nice-select.min.js"></script>
+    <script src="~/Content/Site/assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="~/Content/Site/assets/js/jquery.barfiller.js"></script>
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="~/Content/Site/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/Site/assets/js/waypoints.min.js"></script>
+    <script src="~/Content/Site/assets/js/jquery.countdown.min.js"></script>
+    <script src="~/Content/Site/assets/js/hover-direction-snake.min.js"></script>
+    <!-- contact js -->
+    <script src="~/Content/Site/assets/js/contact.js"></script>
+    <script src="~/Content/Site/assets/js/jquery.form.js"></script>
+    <script src="~/Content/Site/assets/js/jquery.validate.min.js"></script>
+    <script src="~/Content/Site/assets/js/mail-script.js"></script>
+    <script src="~/Content/Site/assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="~/Content/Site/assets/js/plugins.js"></script>
+    <script src="~/Content/Site/assets/js/main.js"></script>
+</body>
+</html>
